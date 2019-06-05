@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/produtos', 'ProdutoControlador@index');
 
 Route::get('/departamento', 'DepartamentoControlador@index');
+
+Route::get('/usuario', function(){
+    return view('usuario');
+});
